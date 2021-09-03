@@ -2,9 +2,11 @@
   "name": "fizzbuzz",
   "version": "1.0.0",
   "description": "fizzbuzz implementation with typescript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node ./src/index.ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/graczialevente/fizzbuzz/issues"
   },
-  "homepage": "https://github.com/graczialevente/fizzbuzz#readme"
+  "homepage": "https://github.com/graczialevente/fizzbuzz#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.10",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
 }
